@@ -4,3 +4,20 @@ pre {
 /* * {
     color: green;
 } */
+
+body {
+    max-width: 100ch;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+pre {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
