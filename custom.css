@@ -1,23 +1,29 @@
-pre {
-    white-space: pre-wrap;
-}
-/* * {
-    color: green;
-} */
-
 body {
     max-width: 100ch;
-}
-
-body {
+    padding-block: 24px;
+    padding-inline: 24px;
     font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: normal;
 }
 
 pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
 }
 
+/* Archives */
+
+body > table {
+    width: 100%;
+    & tr td:nth-child(3) {
+        display: none;
+    }
+    & tr td:nth-child(2) {
+        display: flex;
+        justify-content: space-around;
+    }
+}
