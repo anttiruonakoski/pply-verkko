@@ -15,6 +15,11 @@ body {
     font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: normal;
+
+    &>h1 {
+        hyphens: auto;
+        word-break: break-word;
+    }
 }
 
 pre {
@@ -25,8 +30,7 @@ pre {
     font-style: normal;
 }
 
-/* Archives */
-
+/* Archives page */
 body > table {
     width: 100%;
     & tr td:nth-child(3) {
@@ -37,7 +41,7 @@ body > table {
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    & tr td:nth-child(2) a{
+    & tr td:nth-child(2) a {
         white-space: nowrap;
     }
 }

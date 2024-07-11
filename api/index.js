@@ -15,7 +15,8 @@ module.exports = async (req, res) => {
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet"></link>    
             </head >`
-        )
+        ).replace('<HTML>', '<html lang="fi">')
+    
     // 1 year
     res.setHeader('Cache-Control', 'max-age=0, s-maxage=360')
     res.send(html)
